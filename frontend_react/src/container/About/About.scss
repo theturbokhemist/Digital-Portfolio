@@ -1,0 +1,225 @@
+.app__about {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    // background-color: red;
+    margin-top: -1rem;
+
+}
+
+#about {
+  background-color: rgb(156, 212, 244);
+
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Glegoo);
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.app__about-text{
+  font-size: 1.4em;
+  width:90%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style: italic;
+  color: #555555;
+  padding:0.5em 30px 1.2em 45px;
+  border-left:8px solid var(--secondary-color) ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+  margin-top: 0rem;
+  // text-align: center;
+  // text-transform: uppercase;
+  border-radius: 20px;
+
+
+  @media screen and (max-width: 768px) {
+    font-size: 1em;
+  }
+  
+  span {
+
+    color:#030303;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  h2 {
+
+    color:  var(--secondary-color);
+    text-align: center;
+    font-style: normal;
+    font-family: Sans;
+  }
+}
+
+// .otro-blockquote::before{
+//   font-family:Arial;
+//   content: "\201C";
+//   color:#78C0A8;
+//   font-size:4em;
+//   position: absolute;
+//   left: 10px;
+//   top:-10px;
+// }
+
+// .otro-blockquote::after{
+//   content: '';
+// }
+
+
+.app__profiles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: -2rem;
+    // background-color: green;
+
+    .app__profile-item {
+        // background-color: yellow;
+        flex-direction: column;
+        // justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+
+        h2 {
+
+            color:  var(--secondary-color);
+        }
+    }
+}
+
+.app__profile-item {
+    width: 190px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 1rem;
+  
+    img {
+      width: 100%;
+      height: 170px;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+}
+
+.app__about-cv-text{
+    font-size: 1.4em;
+    width:55%;
+    margin:20px auto;
+    font-family:Open Sans;
+    font-style: italic;
+    color: #555555;
+    padding:0.1em 30px .2em 45px;
+    border-left:8px solid var(--secondary-color) ;
+    line-height:1.6;
+    position: relative;
+    background:#EDEDED;
+    border-radius: 10px;
+    text-align: center;
+
+    @media screen and (max-width: 1200px) {
+        width:85%;
+      }
+  
+    a {
+  
+      color:  var(--secondary-color);
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  .app__about-education {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+
+    .app__about-education-img {
+      display: flex;
+
+      flex-direction: row;
+      justify-content: center;
+      // margin-left: -10%;
+
+    }
+  
+      img {
+        width: 40%;
+        max-height: 100%;
+        object-fit: contain;
+        border-radius: 10%;
+      }
+    
+  
+    .app__about-education-text {
+
+      font-size: 1.4em;
+      // margin: 20px 10px;
+      font-family: 'Open Sans', sans-serif;
+      font-style: italic;
+      color: #555555;
+      padding: 0.1em 30px 0.2em 45px;
+      border-left: 8px solid var(--secondary-color);
+      line-height: 1.6;
+      position: relative;
+      background: #ededed;
+      max-width: 600px;
+  
+      h2 {
+        color: var(--secondary-color);
+        text-align: center;
+        font-style: normal;
+        font-family: Sans;
+      }
+    }
+  }
+
+
+  .about-modal {
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    // overflow: auto;
+    background-color: rgb(230, 240, 242);
+    width:80%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-evenly;
+    // max-height: 80%;
+    // margin-top: 1rem;
+    // align-items: center;
+    max-height: 80vh; //THIS IS IMPORTANT
+    overflow-y: auto; // for scroll bars
+    margin-top: 1rem;
+    
+  }
+
+  .about-modal-close {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: .5rem;
+
+
+    button {
+
+      margin-top: 0rem
+
+    }
+  }
+  
